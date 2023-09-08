@@ -91,7 +91,7 @@
     self = [super initWithContentView:nil];;
     
     if (self) {
-        self.layer.contentsScale = [UIScreen mainScreen].scale;
+        self.layer.contentsScale = 2;
         [self.layer setNeedsDisplay];
         
         self.ringWidth = 3.0;
