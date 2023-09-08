@@ -16,7 +16,7 @@
 #endif
 
 static inline CGRect JGProgressHUD_CGRectIntegral(CGRect rect) {
-    CGFloat scale = [[UIScreen mainScreen] scale];
+    CGFloat scale = 2;
     
     return (CGRect){{((CGFloat)floor(rect.origin.x*scale))/scale, ((CGFloat)floor(rect.origin.y*scale))/scale}, {((CGFloat)ceil(rect.size.width*scale))/scale, ((CGFloat)ceil(rect.size.height*scale))/scale}};
 }
